@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>fruity</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2"></link>
+  <link rel="preload" href="fonts/Gilroy-ExtraBold.woff2"></link>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2"></link>
+  <link rel="preload" href="fonts/Gilroy-SemiBold.woff2"></link>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2"></link>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+    <h1 class="header__logo">Fru<span>i</span>ty</h1>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li><a href="#!" class="menu__item">Home</a></li>
+        <li><a href="#!" class="menu__item">Categories</a></li>
+        <li><a href="#!" class="menu__item">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header__btns">
+      <button class="contact-us__btn popup-open__btn" data-popup-open="contact">Contact Us</button>
+      <button class="basket__btn" ><img src="img/basket.svg" alt="basket"><span class="basket__plush">0</span></button>
+      <button class="search__btn"><img src="img/search.svg" alt="search"></button>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- ####################### MAIN ############################# -->
+
+    <main class="main">
+      <section class="preview">
+        <div class="prev__container">
+          <div class="prev__content">
+            <h1 class="main__title"><span>Organic</span> Healthy Fresh Food For You<span>.</span></h1>
+            <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+            <button class="main__btn popup-open__btn" data-popup-open="contact">Order Now</button>
+          </div >
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="products__container">
+          <h3 class="product__title">Featured Product</h3>
+          <div class="product__cards">
+            <div class="product__card" data-id="01">
+              <div class="product__card-image">
+                <img src="img/banana.jpg" alt="" class="product__card-img">
+              </div>
+              <h4 class="product__card__title">Ripe Yellow Banana</h4>
+              <p class="product__price">$2.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn banana-btn" data-prod="banana-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="02">
+              <div class='product__card-image'><img src="img/granat.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Red Pomegranate</h4>
+              <p class="product__price">$3.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn granat-btn" data-prod="granat-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="03">
+              <div class="product__card-image"><img src="img/orange.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Sweet Orange</h4>
+              <p class="product__price">$2.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn orange-btn" data-prod="orange-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="04">
+              <div class="product__card-image"><img src="img/avocado.jpg" alt="" class="product__card-img"></div>
+              <h4 class="product__card__title">Tasty Avocado</h4>
+              <p class="product__price">$3.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn avocado-btn" data-prod="avocado-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="05">
+              <div class="product__card-image"><img src="img/apples1.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Ripe red apples</h4>
+              <p class="product__price">$5.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn apples1-btn" data-prod="apples1-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="06">
+              <div class="product__card-image"><img src="img/apples2.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Ripe Green Apple</h4>
+              <p class="product__price">$1.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn apples2-btn" data-prod="apples2-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="07">
+              <div class="product__card-image"><img src="img/strawberry.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Sweet Strawberry</h4>
+              <p class="product__price">$5.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn strawberry-btn" data-prod="strawberry-btn">Buy</button>
+              </div>
+            </div>
+            <div class="product__card" data-id="08">
+              <div class="product__card-image"><img src="img/watermelon.jpg" alt="" class="product__card-img"></div >
+              <h4 class="product__card__title">Tasty Watemelon</h4>
+              <p class="product__price">$6.89</p>
+              <div class="prod-inf">
+                <p class="product__size">500g</p>
+                <button class="product__btn watermelon-btn" data-prod="watermelon-btn">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="work___container">
+          <div class="work__images">
+            <div class="work-left__images">
+              <img class="womenVeg" src="img/workLeft-1.jpg" alt="">
+              <img src="img/workLeft-2.jpg" alt="">
+            </div>
+            <div class="work-right__images">
+              <img src="img/workRight-1.jpg" alt="">
+              <img src="img/workRight-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="work__content">
+            <h3 class="work__title">How it Works</h3>
+            <p class="work__text">Lorem Ipsum is simply dummy text of the printi and typesetting industry. Lorem Ipsum has been the industry’s </p>
+            <div class="work__stages">
+              <div class="work__stage _anim-items">
+                <div class="work-img__wrapper work-img__wrapper-1"><img src="img/workSvg-1.svg" alt="" class="work-stage__img"></div>
+                <div class="work-stage__content">
+                  <h4 class="work-stage__title">Choose Product</h4>
+                  <p class="work-stage__text">Lorem Ipsum is simply dummy text of the printi</p>
+                </div>
+              </div>
+              <div class="work__stage _anim-items">
+                <div class="work-img__wrapper work-img__wrapper-2"><img src="img/workSvg-2.svg" alt="" class="work-stage__img"></div>
+                <div class="work-stage__content">
+                  <h4 class="work-stage__title">Do Payment</h4>
+                  <p class="work-stage__text">Lorem Ipsum is simply dummy text of the printi</p>
+                </div>
+              </div>
+              <div class="work__stage _anim-items">
+                <div class="work-img__wrapper work-img__wrapper-3"><img src="img/workSvg-3.svg" alt="" class="work-stage__img"></div>
+                <div class="work-stage__content">
+                  <h4 class="work-stage__title">Confirmation Payment</h4>
+                  <p class="work-stage__text">Lorem Ipsum is simply dummy text of the printi</p>
+                </div>
+              </div>
+              <div class="work__stage _anim-items">
+                <div class="work-img__wrapper work-img__wrapper-4"><img src="img/workSvg-4.svg" alt="" class="work-stage__img"></div>
+                <div class="work-stage__content">
+                  <h4 class="work-stage__title">Order Shipped</h4>
+                  <p class="work-stage__text">Lorem Ipsum is simply dummy text of the printi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__content">
+            <h3 class="about__title _anim-items">About Us</h3>
+            <p class="about__text _anim-items">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+            <a href="#read-more"><button class="about__btn _anim-items">Read More</button></a>
+          </div>
+          <img src="img/about.jpg" class="about__img" alt="">
+        </div>
+      </section>
+      <section class="review" id="read-more">
+        <div class="review__container">
+          <h3 class="review__title">Customer Review</h3>
+          <div class="swiper review__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review-slide">
+                  <p class="review__text">We help our clients make realize thier most important businessWe help our clients make realize thier We help our clients make realize thier most important businessWe help our clients make realize </p>
+                  <div class="review__acc">
+                    <img src="img/andrew.jpg" class="review__img"></img>
+                    <div class="review-acc__info">
+                      <p class="review__name">Kevin Andrew</p>
+                      <p class="review__desc">Happy Customers</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide review-slide">
+                <p class="review__text">We help our clients make realize thier most important businessWe help our clients make realize thier We help our clients make realize thier most important businessWe help our clients make realize </p>
+                <div class="review__acc">
+                  <img src="img/andrew.jpg" class="review__img"></img>
+                  <div class="review-acc__info">
+                    <p class="review__name">Kevin Andrew</p>
+                    <p class="review__desc">Happy Customers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide review-slide">
+                <p class="review__text">We help our clients make realize thier most important businessWe help our clients make realize thier We help our clients make realize thier most important businessWe help our clients make realize </p>
+                <div class="review__acc">
+                  <img src="img/andrew.jpg" class="review__img"></img>
+                  <div class="review-acc__info">
+                    <p class="review__name">Kevin Andrew</p>
+                    <p class="review__desc">Happy Customers</p>
+                  </div>
+                </div>
+              </div>
+            <div class="swiper-button-prev review-button-prev"></div>
+            <div class="swiper-button-next review-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <div class="basket-modal">
+        <div class="basket-modal__body">
+          <div class="basket-cross"></div>
+          <div class="basket-content">
+            <div class="basket-no">
+              <img src="../img/cry.svg" alt="">
+              <p class="basket-text">There is no purchase!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="contact__popup popup" id="contact">
+      <div class="contact-popup__body popup__body">
+        <div class="popup-close"></div>
+        <div class="contact__content">
+          <h6 class="contact__title">You wanna buy it?</h6>
+          <p class="contact__text">just write youre e-mail, and we will call you!</p>
+          <form class="contact__form">
+            <input type="text" class="contact__input" placeholder="E-mail...">
+            <button class="contact__btn">buy</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="search__modal">
+        <div class="search__body">
+          <div class="search__container">
+            <div class="search-close"></div>
+            <form class="search__form">
+              <input type="text" class="search__input" placeholder="write a searching category!"></input>
+            </form>
+            <ul class="search__examples">
+              <li class="search__example"><a href="#products">Featured Product</a></li>
+              <li class="search__example"><a href="#work">How it Works</a></li>
+              <li class="search__example"><a href="#about">About Us</a></li>
+              <li class="search__example"><a href="#read-more">Customer Review</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <!-- ######################## FOOTER ########################## -->
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="up-footer">
+      <div class="main__column">
+        <h6 class="footer-main-column__title">Fruity</h6>
+        <p class="footer-column__text">Lorem Ipsum is simply dummy typesetting industry. Lorem Ipsum has been the industry’s standard</p>
+        <div class="footer__icons">
+          <img class="footer__icon" src="img/face.svg"></img>
+          <img class="footer__icon" src="img/twit.svg"></img>
+          <img class="footer__icon" src="img/linkdin.svg"></img>
+          <img class="footer__icon" src=" img/you.svg"></img>
+        </div>
+      </div>
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h6 class="footer-column__title" data-acord="#acord-1">Community</h6>
+          <ul class="footer-column__list" id="acord-1">
+            <li><a href="#!" class="footer-column__item">For Agents</a></li>
+            <li><a href="#!" class="footer-column__item">For Seller</a></li>
+            <li><a href="#!" class="footer-column__item">For Buyer</a></li>
+            <li><a href="#!" class="footer-column__item">Search home</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h6 class="footer-column__title" data-acord="#acord-2">About</h6>
+          <ul class="footer-column__list" id="acord-2">
+            <li><a href="#!" class="footer-column__item">Our Story</a></li>
+            <li><a href="#!" class="footer-column__item">Careers</a></li>
+            <li><a href="#!" class="footer-column__item">Meet the Team</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h6 class="footer-column__title" data-acord="#acord-3">Contact</h6>
+          <ul class="footer-column__list" id="acord-3">
+            <li><a href="#!" class="footer-column__item">29/A Berden Street</a></li>
+            <li><a href="#!" class="footer-column__item">Simply random text</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="down-footer">
+      <p class="down-footer__text">© 2021 Real State All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </div>
+</body>
+</html>
