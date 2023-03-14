@@ -472,7 +472,7 @@ a {
 .preview {
   position: relative;
   padding-top: 150px;
-  background-image: url(../../img/prevBack.png);
+  background-image: url(../img/prevBack.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 10px;
